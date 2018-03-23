@@ -64,7 +64,7 @@ class PF_Taxonomies
             'labels' => $labels,
             'show_ui' => true,
             'query_var' => true,
-            'rewrite' => array( 'slug' => 'author' ),
+            'rewrite' => array( 'slug' => 'topic' ),
         ));
     }
 
