@@ -83,7 +83,7 @@ class PF_Taxonomies
             'menu_name' => __( 'Scriptures' ),
         );
 
-        register_taxonomy('topic',array('sermon','record'), array(
+        register_taxonomy('scripture',array('sermon','record'), array(
             'hierarchical' => true,
             'labels' => $labels,
             'show_ui' => true,
