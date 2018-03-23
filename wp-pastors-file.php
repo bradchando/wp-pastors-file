@@ -49,6 +49,7 @@ class PastorsFileController
          *******************************************************************************/
         add_action('init', 'PF_Taxonomies::create_author_taxonomy', 0);
         add_action('init', 'PF_Taxonomies::create_topic_taxonomy', 0);
+        add_action('init', 'PF_Taxonomies::create_scripture_taxonomy', 0);
 
         /*******************************************************************************
          ** INITIALIZE CONTENT TYPES **

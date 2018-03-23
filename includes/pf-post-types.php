@@ -39,6 +39,7 @@ class PF_PostTypes
             'labels' => $labels,
             'menu_icon' => 'dashicons-megaphone',
             'public' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
             'supports' => array( 'title', 'author', 'thumbnail', 'custom-fields', 'comments', 'excerpt', 'editor' ),
             'taxonomies' => array('post_tag')
@@ -64,6 +65,7 @@ class PF_PostTypes
             'labels' => $labels,
             'menu_icon' => 'dashicons-book-alt',
             'public' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
             'supports' => array( 'title', 'author', 'thumbnail', 'custom-fields', 'comments', 'excerpt', 'editor' ),
             'taxonomies' => array('post_tag','author')

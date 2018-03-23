@@ -68,6 +68,30 @@ class PF_Taxonomies
         ));
     }
 
+    public static function create_scripture_taxonomy() {
+        $labels = array(
+            'name' => _x( 'Scripture', 'taxonomy general name' ),
+            'singular_name' => _x( 'Scripture', 'taxonomy singular name' ),
+            'search_items' =>  __( 'Search Scriptures' ),
+            'all_items' => __( 'All Scriptures' ),
+            'parent_item' => __( 'Parent Scripture' ),
+            'parent_item_colon' => __( 'Parent Scripture:' ),
+            'edit_item' => __( 'EditScripturec' ),
+            'update_item' => __( 'Update Scripture' ),
+            'add_new_item' => __( 'Add New Scripture' ),
+            'new_item_name' => __( 'New Scripture' ),
+            'menu_name' => __( 'Scriptures' ),
+        );
+
+        register_taxonomy('topic',array('sermon','record'), array(
+            'hierarchical' => true,
+            'labels' => $labels,
+            'show_ui' => true,
+            'query_var' => true,
+            'rewrite' => array( 'slug' => 'scripture' ),
+        ));
+    }
+
 }
 
 /* EOF */
