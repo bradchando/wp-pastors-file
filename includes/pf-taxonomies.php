@@ -76,7 +76,7 @@ class PF_Taxonomies
             'all_items' => __( 'All Scriptures' ),
             'parent_item' => __( 'Parent Scripture' ),
             'parent_item_colon' => __( 'Parent Scripture:' ),
-            'edit_item' => __( 'EditScripturec' ),
+            'edit_item' => __( 'Edit Scripture' ),
             'update_item' => __( 'Update Scripture' ),
             'add_new_item' => __( 'Add New Scripture' ),
             'new_item_name' => __( 'New Scripture' ),
