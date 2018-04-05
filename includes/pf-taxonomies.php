@@ -92,6 +92,30 @@ class PF_Taxonomies
         ));
     }
 
+    public static function create_series_taxonomy() {
+        $labels = array(
+            'name' => _x( 'Series', 'taxonomy general name' ),
+            'singular_name' => _x( 'Series', 'taxonomy singular name' ),
+            'search_items' =>  __( 'Search Series' ),
+            'all_items' => __( 'All Series' ),
+            'parent_item' => __( 'Parent Series' ),
+            'parent_item_colon' => __( 'Parent Series:' ),
+            'edit_item' => __( 'Edit Series' ),
+            'update_item' => __( 'Update Series' ),
+            'add_new_item' => __( 'Add New Series' ),
+            'new_item_name' => __( 'New Series' ),
+            'menu_name' => __( 'Series' ),
+        );
+
+        register_taxonomy('series',array('sermon'), array(
+            'hierarchical' => true,
+            'labels' => $labels,
+            'show_ui' => true,
+            'query_var' => true,
+            'rewrite' => array( 'slug' => 'series' ),
+        ));
+    }
+
 }
 
 /* EOF */
